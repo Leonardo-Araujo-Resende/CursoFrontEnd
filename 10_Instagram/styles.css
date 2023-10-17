@@ -1,0 +1,65 @@
+
+html{
+    background-color: #e6e6e6;
+}
+
+/* Container */
+.container{
+    display: flex;
+    margin-top: 50px;
+    
+}
+
+.banner, .page{
+    flex: 1 1 0;
+}
+
+/* Banner */
+.banner{
+    align-items: end;
+    text-align: right;
+}
+
+#banner-img{
+
+    max-width: 400px;
+}
+
+
+/* Login */
+.page{
+
+}
+
+.login{
+    width: 550px;
+    border: 2px solid #c9c8c8;
+    border-radius: 3px;
+    background-color: white;
+    margin: 50px auto;
+}
+
+#logo-insta{
+    width: 171px;
+    height: 51px;
+    margin-left:190px;
+    margin-top: 50px;
+}
+
+.login input{
+    display: block;
+    align-items: center;
+    padding: 10px 50px 10px 0;
+    margin: 5px auto;
+    
+}
+
+.login input[type="text"], .login input[type="password"]{
+    
+    font-size: 10px;
+    background-color: #e6e6e6;
+}
+
+.login input[type="submit"]{
+
+}

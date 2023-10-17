@@ -1,0 +1,491 @@
+/* 4 - external css */
+h3{
+    color: blue;
+}
+
+
+
+/* Classes */
+.paragraph{
+    background-color: black;
+    color: aqua;
+    padding: 5px;
+}
+
+/* ID */
+#exclusive-title{
+    background-color:  purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* Multiplas regras */
+
+h2{
+    color: blue;
+}
+
+.titulo{
+    color: green;
+}
+
+#algum-titulo{
+    color: yellow;
+}
+
+/* Cor hex*/
+.hex{
+    color: #09b900;
+}
+
+/* Cor rgb */
+.rgb{
+    color: rgb(0,0,200);
+}
+
+/* Cor rgba */
+.rgba{
+    color: rgba(0, 0, 200, 0.148);
+}
+
+/* Backgorund Color */
+.backgroundColor{
+    background-color: blue;
+    opacity: 1; /*Opacidade de tudo*/
+    color: black;
+}
+
+/* Imagem de fundo */
+.imagemFundo{
+    color: white;
+    background-image: url("/3_CSS/img/Galaxy.jpg");
+    padding: 50px;
+    margin-top: 50px;
+}
+
+/*Centralizar Imagem*/
+
+.imagemCentralizada,
+.imagemNaoCentralizada{
+    height: 500px;
+    width: 500px;
+    background-image: url("/3_CSS/img/Galaxy.jpg");
+    margin: 5px;
+}
+
+.imagemCentralizada{
+    background-position: center;
+    background-size: cover;
+}
+
+/* Altura e Largura*/
+.alturaLargura{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.alturaLargura2{
+    /* Qnd nao coloca largura ele preenche a tela inteira */
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+}
+
+/* Padding */
+
+.comPadding{
+    padding: 10px;
+    background-color: gray;
+}
+
+.semPadding{
+    background-color: aqua;
+}
+
+.PaddingVariasDirecoes{
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.PaddingShortAnd{
+    padding: 5px 10px 20px 30px;
+    background-color: coral;
+}
+
+.PaddingVertical{
+    padding: 10px 50px;
+    background-color: bisque;
+}
+
+/* Padding com width */
+/*               Largura total 500 = 400 + 50 * 2                                  */
+.SemBorderBox{
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 50px;
+}
+
+/*               Largura total 400 = 300 + 50 * 2                            */
+/* border-box mantem a largura sempre 400 independente do padding */
+.ComBorderBox{
+    background-color: antiquewhite;
+    width: 400px;
+    padding: 50px; 
+    box-sizing: border-box;
+}
+
+/* Borda */
+
+.borda{
+    border: 2px solid blue;
+    padding: 50px;
+}
+
+.borda2{
+    border: 3px dotted red;
+    padding: 50px;
+}
+
+/* Borda individual */
+
+.bordaIndividual{
+    border-left: 10px solid black;
+    background-color: blue;
+    padding: 20px;
+}
+
+.bordaIndividual2{
+    border-top: 10px solid black;
+    background-color: blue;
+    padding: 20px;
+}
+
+.bordaArredondada{
+    border: 30px solid blue;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.bordaArredondada2{
+    background-color: black;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Margin */
+
+.margem{
+    background-color: blue;
+    margin: 20px;
+    padding: 10px;
+}
+
+.margem2{
+    background-color: darkblue;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.margem3{
+    background-color: blue;
+    padding: 10px;
+    margin: 10x 20x 30x 40x;
+}
+
+/* Box Model */
+
+.boxModel{
+    padding: 20px;
+    margin: 20px 40px;
+    border: 10px solid red;
+    background-color: yellow;
+    border-radius: 15px;
+    width: 500px;
+    height: 250px;
+}
+
+/* Alinhamento */
+
+.alinhadoDireita{
+    text-align: right;
+}
+
+.alinhadoEsquerda{
+    text-align: left;
+}
+
+.alinhadoCentro{
+    text-align: center;
+    border: 1px solid red;
+    width: 300px;
+}
+
+h1{
+    border-bottom: 1px solid black;
+}
+
+/* Text decoration */
+.underline{
+    text-decoration: underline;
+}
+
+.corte{
+    text-decoration: line-through;
+}
+
+.semDecoration{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Text transform */
+
+.lower{
+    text-transform: lowercase;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+/* Letter spacing */
+
+.letterSpacing{
+    letter-spacing: 10px;
+    background-color: gray;
+    padding: 50px;
+}
+
+/* Fontes */
+.fonte1{
+    font-family: Georgia;
+}
+
+.fonte2{
+    font-family: fantasy;
+}
+
+.fonte3{
+    font-family: "Courier New";
+}
+
+/* Font style */
+.italico{
+    font-style: italic;
+    margin-top: 50px;
+
+}
+
+.obliquo{
+    font-style: oblique;
+
+}
+
+/* Font wight */
+
+.fina,.normal, .grossa{
+    font-family: Helvetica;
+}
+
+.fina{
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+.normal{
+    font-weight: 600;
+}
+
+.grossa{
+    font-weight: 900;
+}
+
+/* Font size */
+
+.small{
+    font-size: 10px;
+    margin-top: 50px;
+}
+
+.big{
+    font-size: 100px;
+}
+
+/* Display */
+.inline{
+    background-color: indianred;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #555;
+    display: block;
+    color: #FFF;
+    padding: 5px;
+    margin: 2px;
+}
+
+/* Hiding  */
+
+.hiding{
+    display: none;
+}
+
+/* Estatico */
+
+.statico{
+    position: static;
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relativo */
+
+.relativo{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: darkred;
+    top: 40px;
+    left: 50px;
+}
+
+/* Absolute */
+.absoluto{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Realtive Absolute */
+.relativeAbsolute{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.absolute1{
+    width: 50px;
+    height: 50px;
+    background-color: #09b900;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.absolute2{
+    width: 50px;
+    height: 50px;
+    background-color: #555;
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+/* Fixed */
+.fixo{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: darkgreen;
+}
+
+/* Sticky */
+.sticky{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 50px;
+    position: sticky;
+    bottom: 10px;
+    right: 10px;
+    color: darkgreen;
+}
+
+
+/* Z index */
+
+.relativeAbsolute2{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.index1, .index2, .index3{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.index1{
+    background-color: black;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.index2{
+    background-color: #555;
+    bottom: 30px;
+    left: 30px; 
+    z-index: 2;
+}
+
+.index3{
+    background-color: darkgreen;
+    bottom: 60px;
+    left: 60px;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

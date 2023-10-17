@@ -1,0 +1,13 @@
+
+label,input{
+    display: block;
+}
+
+.radio label, .radio input{
+    display: inline-block;
+}
+
+div{
+    margin: 30px 0;
+}
+

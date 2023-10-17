@@ -1,0 +1,91 @@
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header{
+    background-color: rgb(178, 103, 124);
+}
+.container{
+    background-color: white;
+    margin-bottom: 50px;
+    padding: 0 0 50px 0;
+    margin: 0 20px 0 20px;
+
+}
+html{   
+    background-color: red;
+    background-image: url("img/11952284_11_pattern.jpg");
+    background-size: cover;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"]{
+    margin-bottom: 30px;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+    background-color: #DDD;
+    width: 30%;
+}
+
+.optional label{
+ display: inline-block;
+}
+
+
+input:hover{
+    background-color: #cac8c8b5;
+}
+
+label{
+    display: block;
+}
+
+textarea{
+    margin-bottom: 30px;
+    padding: 30px 130px;
+}
+
+#titulo{
+    color: black;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 50px;
+}
+
+
+
+.container-form{
+    background-color: #DDD;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    position: relative;
+}
+
+.titulo-form{
+    text-align: center;
+    color: white;
+    background-color: rgb(178, 103, 124);
+    padding: 10px 5px;
+    margin: 20px 50px;
+    position: relative;
+    top: -65px;
+}
+
+.foto{
+    margin: 50px 0;
+    width: 100%;
+}
+
+#texto-opcionais{
+    margin: 10px 0;
+    font-size: large;
+}

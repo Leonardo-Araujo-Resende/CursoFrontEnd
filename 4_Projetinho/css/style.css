@@ -1,0 +1,118 @@
+html{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/4_Projetinho/img/450xN.jpg");
+}
+
+
+/* Cabeçalho */
+.header{
+    text-align: center;
+    height: 500px;
+    color: white;
+    font-family: Funtasy;
+    background-image: url("../img/64312092.jpg");
+    background-size: cover;
+
+    
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    
+}
+
+.titulo{
+    font-size: 100px;
+    
+}
+
+.container{
+    position: relative;
+    margin: 40px 35px;
+    padding: 20px 50px;
+    background-color: white;
+}
+
+
+
+h1{
+    font-weight: bold;
+}
+
+/* Sinopse */
+.biografia{
+    border-bottom: 1px solid gray;
+    margin: 50px 0px;
+    padding-bottom: 30px;
+}
+
+/* Personagens */
+
+.personagens{
+    padding: 0px 20px auto;
+    text-align: center;
+}
+
+.imagem-personagens{
+    width: 200px;
+    height: 200px;
+}
+
+.harry, .rony, .hermione{
+    width: 400px;
+    height: 500px   ;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 10px;
+
+}
+
+/* Ordem dos filmes */
+
+.ordem-filmes{
+    color: white;
+    padding: 50px;
+    background-image: url("../img/wallpaper_livro-HP7.jpg");
+    background-size: cover;
+    margin: 50px 0px;
+
+}
+
+.ordem-filmes li{
+    margin: 10px;
+}
+
+
+/* Citacao filme */
+
+
+.frases-filme{
+    margin-top: 100px;
+    font-size: xx-large;
+}
+
+.frase{
+    text-align: center;
+    padding: 50px;
+    background-color: #ded5d5;
+    position: relative;
+    margin: 20px 0px;
+    box-shadow: 2px 2px 4px 2px black;
+}
+
+.fala{
+    font-style: italic;
+}
+
+.nome{
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    font-style: oblique;
+}
+
+/* Imagem */
+
+.imagem{
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+}

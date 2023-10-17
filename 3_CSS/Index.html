@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- 3 Internal css-->
+    <style>
+        p {
+            color: gold;
+
+        }
+    </style>
+    <!-- 4 External css-->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/list.css"/>
+</head>
+
+<body>
+    <!-- 1 Inline css-->
+    <h1 style="color: red;"> Mudar a cor </h1>
+    <h1 style="color: yellow;"> Mudar a cor </h1>    
+
+    <!-- 2 Multiplas regras-->
+    <h2 style="color: black; font-size: 40px; border-bottom: 1 px solid red;"> Multiplas regras</h2>
+
+    <!-- 3 Internal css-->
+    <p> Eu fui estilizado pelo internal</p>
+    <p> Mais um</p>
+    <p> Mais outro</p>
+
+    <!-- 4 External css-->
+    <h3> Texte external css</h3>
+
+    <!-- 5 Ordem do css-->
+    <!-- Inline > external = internal-->
+    <p style="color: red;"> testando ordem</p>
+
+    <!--6 Multiplos css-->
+    <ul>
+        <li>Banana</li>
+        <li> Maca </li>
+        <li> Abacate </li>
+    </ul>
+
+    <!-- 8 classes -->
+    <p class="paragraph"> Texto com classe</p>
+    <p class="paragraph"> Texto com classe</p>
+
+    <!-- 9 id -->
+    <h1 id="exclusive-title"> Titulo com id unico</h1>
+
+    <!-- 10 Multiplas regras, ordem do css-->
+    <h2 id="algum-titulo" class="titulo"> Tem tag class id</h2>
+    <h2 class="titulo"> Tem class tag</h2>
+    <h2> Tem tag</h2>
+
+    <!-- 11 hex-->
+    <p class="hex">Paragrafo com hex</p>
+
+    <!-- 12 rgb -->
+    <p class="rgb">Paragrafo com rgb</p>
+
+    <!-- 13 rgba -->
+    <p class="rgba">Paragrafo com rgba</p>
+
+    <!-- 14 Background color-->
+    <p class="backgroundColor">Texto com background</p>
+
+    <!-- 15 Imagem fundo -->
+    <h1 class="imagemFundo">Esse titulo tem uma imagem</h1>
+
+    <!-- 16 Centralzar imagem-->
+    <div class="imagemCentralizada"></div>
+    <div class="imagemNaoCentralizada"></div>
+
+    <!-- 17 Altura largura -->
+    <div class="alturaLargura"> <p>Paragrafo de teste</p></div>
+    <div class="alturaLargura2"></div>
+
+    <!-- 18 Padding-->
+
+    <div class="comPadding"> Paragrafo com padding</div>
+    <div class="semPadding">Paragrafo sem padding</div>
+
+    <div class="PaddingShortAnd"><p>Paragrafo com padding shortand</p></div>
+    <div class="PaddingVertical"><p>Paragrafo com padding shortand</p></div>
+
+    <!-- 19 Padding com width-->
+    <p class="SemBorderBox">Paragrafo SemBorderBox</p>
+    <p class="ComBorderBox">Paragrafo ComBorderBox</p>
+
+    <!-- 20 border -->
+    <p class="borda">Paragrafo com borda</p>
+    <p class="borda2">Paragrafo com borda 2</p>
+
+    <!-- 21 Borda individual-->
+    <p class="bordaIndividual">Paragrafo com bordaIndividual</p>
+    <p class="bordaIndividual2">Paragrafo com bordaIndividual 2</p>
+
+    <!-- 22 Borda arredondada-->
+    <p class="bordaArredondada">Borda arredondada</p>
+    <p class="bordaArredondada2">Borda arredondada2</p>
+
+    <!-- 23 Margin -->
+    <p class="margem">Borda margem</p>
+    <p class="margem2">Borda margem2</p>
+    <p class="margem3">Borda margem2</p>
+
+    <!-- 24 Box Model -->
+    <p class="boxModel">Tenho todos os elementos do box model</p>
+
+    <!-- 25 Text Align-->
+    <p class="alinhadoDireita">Alinhado a direita</p>
+    <p class="alinhadoEsquerda">Alinhado a Esquerda</p>
+
+    <div class="alinhadoCentro">
+        <h1> Titulo </h1>
+        <p>Texto do titulo lorem ipsum</p>
+    </div>
+
+    <!-- 26 Text decoration -->
+    <p class="underline"> Eu tenho under line</p>
+    <p class="corte">Eu tenho um corte </p>
+    <a href="" class="semDecoration">Sem decoracao</a>
+
+    <!-- 27 Text transform-->
+    <p class="upper">Texto caxa alta</p>
+    <p class="lower">Texto caxa baxa</p>
+
+    <!-- 28 Letter spacing-->
+    <p class="letterSpacing">Texto com espacamento entre as letras</p>
+
+    <!-- 29 Fontes-->
+    <p class="fonte1">Texto com fontes diversas</p>
+    <p class="fonte2">Texto com fontes diversas</p>
+    <p class="fonte3">Texto com fontes diversas</p>
+
+    <!-- 30 Font style-->
+    <p class="italico">Estou em italico</p>
+    <p class="obliquo">Estou em obliquo</p>
+
+    <!-- 31 Font weight-->
+    <p class="fina">sou muito fina</p>
+    <p class="normal">sou grossura normal</p>
+    <p class="grossa">sou uma grossura grossa</p>
+
+    <!-- 32 Font size-->
+    <p class="small">Sou uma fonte pequena</p>
+    <p class="big">Sou uma fonte grande</p>
+
+    <!-- 40 sticky-->
+    <p class="sticky">Eu sou sticky fico seguindo a tela</p>
+
+    <!-- 33 Display-->
+    <p class="inline">a</p>
+    <p class="inline">b</p>
+    <p class="inline">c</p>
+
+    <span class="block"> teste 1</span>
+    <span class="block"> teste 2</span>
+
+    <!-- 34 Escondendo elementos -->
+    <p class="hiding">Me encontre se puder</p>
+
+    <!-- 35 Position static-->
+    <p class="statico">eu sou estatico</p>
+
+    <!-- 36 Position relative-->
+    <p class="relativo">eu sou relativo</p>
+    <p>Algo ficou em cima de fim Algo ficou em cima de fim Algo ficou em cima de fim</p>
+
+    <!-- 37 Position absolute-->
+    <p class="absoluto">Eu sou absoluto</p>
+    <p>Paragrafo testetestetesteteste</p>
+    <p>Paragrafo testetestetesteteste</p>
+    <p>Paragrafo testetestetesteteste</p>
+
+    <!-- 38 relative absolute-->
+    <div class="relativeAbsolute">
+        <p class="absolute1"></p>
+        <p class="absolute2"></p>
+    </div>
+
+    <!-- 39 Fixed-->
+    <p class="fixo">Eu sou fixo</p>
+
+    <!-- 41 Z index-->
+    <div class="relativeAbsolute2">
+
+    <p class="index1"></p>
+    <p class="index2"></p>    
+    <p class="index3"></p>  
+
+    </div>
+
+
+</body>
+
+</html>

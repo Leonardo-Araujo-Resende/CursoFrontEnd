@@ -1,0 +1,54 @@
+html{
+    background-color: rgb(226, 224, 224);
+    font-family: Helvetica;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.foto, .login{
+    width: 40%;
+    flex: 1 1 0;
+    margin: 0 10px ;
+}
+
+/* banner */
+.foto{
+    background-color: red;
+}
+
+
+/* login */
+.login{
+    background-color: white;
+    border: 1px solid rgb(164, 161, 161);
+    border-radius: 2px;
+}
+input{
+    display: block;
+    margin: 5px auto;
+    padding: 10px 100px 10px 2px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+h1{
+    text-align: center;
+}
+
+#enviar{
+    margin: 10px auto;
+
+}
+
+form input[type="submit"]{
+    padding: 10px 100px;
+    text-align: center;   
+    background-color: rgb(98, 139, 234);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+}
