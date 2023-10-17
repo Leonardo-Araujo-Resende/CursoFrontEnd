@@ -4,8 +4,9 @@
 }
 
 .header{
-    background-color: rgb(178, 103, 124);
+    background-color: rgb(198, 198, 193);
 }
+
 .container{
     background-color: white;
     margin-bottom: 50px;
@@ -13,9 +14,10 @@
     margin: 0 20px 0 20px;
 
 }
+
 html{   
     background-color: red;
-    background-image: url("img/11952284_11_pattern.jpg");
+    background-image: url("img/pexels-yurii-hlei-1545743.jpg");
     background-size: cover;
 }
 
@@ -73,7 +75,7 @@ textarea{
 .titulo-form{
     text-align: center;
     color: white;
-    background-color: rgb(178, 103, 124);
+    background-color: rgb(119, 119, 113);
     padding: 10px 5px;
     margin: 20px 50px;
     position: relative;
