@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(img/5189544_20215.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#titulo h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+#titulo p{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(185, 185, 185);
+    margin: 10px 0 40px 0;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    color: white;
+    width: 100%;
+    padding: 0 20px;
+}
+
+#login label{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: rgb(255, 226, 226);
+}
+
+#login input{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-bottom: 30px;
+    padding: 5px 0;
+    background-color: transparent;
+    color: rgb(186, 186, 186);
+}
+
+#login input:focus{
+    border-bottom: 2px solid white;
+}
+
+
+#cadastrar{
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    padding: 14px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 95%;
+}
+
+#cadastrar:hover{
+    opacity: 0.7;
+    scale: 1.03;
+}
+
+.gerador-senha{
+    border: 1px solid rgb(176, 176, 176);
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    color: rgb(186, 186, 186);
+    width: 100%;
+    text-align: center;
+}
+
+.gerador-senha p{
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(255, 176, 176);
+}
+
+.gerador-senha input{
+    margin: 10px 0;
+}
+
+#qnt-caracteres{
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+
+.hide{
+    display: none;
+    transition: 1s;
+}
+
+.senha-gerada{
+    text-align: center;
+    border: 1px solid rgb(255, 0, 0);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.senha-gerada p{
+    color: white;
+    padding: 5px 0;
+    margin: 5px;
+}
+
+.senha-gerada span{
+    color: rgb(255, 155, 155);
+
+}
+
+.senha-gerada button,
+#criar-senha{
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 20px;
+    background-color: rgb(255, 159, 159);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.senha-gerada button:hover,
+#criar-senha:hover{
+    opacity: 0.5;
+}
+
+#ajuda{
+    color: rgb(186, 186, 186);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#ajuda span{
+    color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ajuda span:hover{
+    opacity: 0.5;
+}
+
+.opcoes{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

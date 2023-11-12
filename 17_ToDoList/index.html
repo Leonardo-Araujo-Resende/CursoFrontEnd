@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="titulo">Lista Afazeres Avançado</h1>
+
+        <div class="adicionar-tarefa">
+            <h2>Adicione uma tarefa:</h2>
+            <input type="text" id ="input-adicionar-tarefa" placeholder="Nome da tarefa">
+            <button id="adicionar-tarefa-botao"><i class="fa-solid fa-plus"></i></button>
+        </div>
+
+        <div class="pesquisar-filtrar">
+            <div class="pesquisar">
+                <h2>Pesquisar:</h2>
+                <input type="text" id="input-pesquisar" placeholder="Buscar...">
+                <button id="pesquisar-botao"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+
+            <div class="filtrar">
+                <h2>Filtrar:</h2>
+                <select id="filtro">
+                    <option value="todos">Todos</option>
+                    <option value="feitos">Feitos</option>
+                    <option value="afazer">A fazer</option>
+                    <option value="excluidos">Excluidos</option>
+                  </select>
+            </div>
+        </div>
+        <div class="tarefas">
+            
+ 
+
+        </div>
+    </div>
+
+    <div class="edicao-tarefa hide">
+
+        <p id="titulo-edicao">Editar tarefa: <span>Ir ao mercado</span></p>
+
+        <div class="novo-nome">
+            <p>Digite o novo nome da Tarefa:</p>
+            <input type="text" id="nome-tarefa-editar" placeholder="Nome inválido">
+        </div>
+
+        <div class="botoes-editar">
+            <button id="concluido-edicao">Concluído</button>
+            <button id="cancelar-edicao">Cancelar</button>
+        </div>
+    </div>
+
+</body>
+</html>

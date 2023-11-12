@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #112139;
+    --cor2: #5F6566;
+    --grau: 45deg;
+} 
+
+body{
+    height: 100vh;
+    background: linear-gradient(var(--grau), var(--cor1),  var(--cor2));
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#relogio{
+    display: flex; 
+    justify-content: space-around;
+    font-weight: bold;
+    box-shadow: 0px 4px 15px rgb(0, 0, 0);
+    width: 540px;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+#relogio div {
+    border-radius: 10px;
+    width: 150px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.806);
+}
+
+.valor {    
+    color: white;
+    font-size: 60px;
+}
+
+.tipo {
+    color: lightgray;
+    font-size: 12px;
+    padding-top: 10px;
+    
+}
+
+.modes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+}
+
+.modes div{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#mode1{
+    background-color: #112139;
+    border: 4px solid #5F6566;
+}
+
+#mode2{
+    background-color: blue;
+    border: 4px solid rgb(167, 167, 220);
+}
+
+#mode3{
+    background-color: yellow;
+    border: 4px solid rgb(241, 241, 194);
+}
+
+#mode4{
+    background-color: #0652F1;
+    border: 4px solid #00BFF3;
+}
+
+#mode5{
+    background-color: #FF124D;
+    border: 4px solid #6A1339;
+}
+
+#inverter{
+    background-color: rgba(0, 0, 0, 0.547);
+    border: 4px solid rgba(0, 0, 0, 0.526);
+}

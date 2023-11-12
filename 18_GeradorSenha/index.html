@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador Senha</title>
+    <script src="scripts.js" defer></script>    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="container">
+            <div id="titulo">
+                <h1>Crie sua conta:</h1>
+                <p>Registre-se para utilizar todas as funcionalidades do sistema</p>
+            </div>
+
+            <div id="login">
+                <label for="nome">Nome*</label>
+                <input type="text" id="nome" placeholder="Digite o seu nome">
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="exemplo@exemplo.exemplo">
+
+                <label for="senha">Senha*</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+
+                <label for="confirmacao-senha">Confirme sua senha*</label>
+                <input type="password" id="confirmacao-senha" placeholder="Confirme sua senha">
+
+            </div>
+
+                <p id="ajuda">Precisa de ajuda para criar uma senha segura? <span>Clique aqui</span></p>
+
+                <div class="gerador-senha hide">
+                    <p>Seleciona as opções desejadas:</p>
+
+                    <div class="opcoes">
+                        <label for="qnt-caracteres">Quantidade de Caracteres</label>
+                        <input type="number" value="10" id="qnt-caracteres"> 
+                    </div>
+                    
+                    <div class="opcoes">
+                        <label for="letras">Letras:</label>
+                        <input type="checkbox" id="letras">
+                    </div>
+                    <div class="opcoes">
+                        <label for="numeros">Números:</label>
+                        <input type="checkbox" id="numeros">
+                    </div>
+                    <div class="opcoes">
+                        <label for="simbolos">Símbolos:</label>
+                        <input type="checkbox" id="simbolos">
+                    </div>
+
+                    <button id="criar-senha">Criar senha</button>
+                </div>
+
+                <div class="senha-gerada hide">
+                    <span>Senha criada com sucesso!</span>
+                    <p id="senha-gerada-tela">dnp93jd2</p>
+                    <button id="copiar-senha">Copiar</button>
+                </div>
+
+                <button id="cadastrar">Cadastrar</button>
+           
+
+        </div>
+</body>
+</html>

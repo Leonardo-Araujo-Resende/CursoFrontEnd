@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container" >
+
+        <div class="calculadora">   
+            <h1 class="titulo">Calculadora de IMC</h1>
+            <div class="input">
+
+                <label for="height">Altura:</label>
+                <div id="input-altura">
+                    <i class="fa-solid fa-ruler"></i>
+                    <input type="number" name="height" id="height" placeholder="Altura em metros">
+                    <p class="input-medida">m</p>
+                </div>
+
+                <label for="weight">Peso:</label>
+                <div id="input-peso">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <input type="number" name="weight" id="weight" placeholder="Peso em Kilos">
+                    <p class="input-medi">Kg</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="calcular">Calcular</button>
+                <button id="limpar">Limpar</button>
+            </div>
+        </div>
+
+        <div class="resultado hide">
+
+            <h1 class="titulo-resultado">Seu IMC: 23.1</h1>
+
+            <p class="situacao">Situação atual: <span>Sobrepeso</span></p>
+            <p class="classificacao-titulo">Confira as classificações</p>
+            
+            <div class="estatisticas">
+                <div class="imc">
+                    <p class="titulo-estatisticas">IMC</p>
+
+                </div>
+                <div class="classificacao">
+                    <p class="titulo-estatisticas">Classificação</p>
+
+                </div>
+                <div class="obesidade">
+                    <p class="titulo-estatisticas">Obesidade</p>
+
+                </div>
+            </div>
+
+            <button class="voltar">Voltar</button>
+
+        </div>
+    </div>
+</body>
+</html>

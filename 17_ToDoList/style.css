@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+:root{
+    --corEscura: #0068A6;
+    --corClara: #e1f5ff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(img/papel-de-parede-de-paisagem-magica-e-mistica-em-tons-de-roxo.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+i{
+    color: var(--corEscura);
+    transition: 0.3;
+}
+
+button{
+    background-color: var(--corClara);
+    border: none;
+    transition: 0.3;
+    border-radius: 5px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+
+select{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--corClara);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+select option{
+    background-color: var(--corClara);
+    color: var(--corEscura);
+    font-size: 15px;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid var(--corClara);
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.601);
+}
+
+input:focus{
+    background-color: rgba(211, 211, 211, 0.113);
+}
+
+.container{
+    background-color: transparent;
+    border: 1px solid var(--corClara);
+    backdrop-filter: blur(30px);
+    padding: 0 30px;
+    border-radius: 10px;
+    width: 35%;
+    margin: 100px 0;
+}
+
+
+
+.container h1{
+    color: var(--corClara);
+    font-size: 33px;
+}
+
+.container h2,
+.container p{
+    color: var(--corClara);
+}
+
+.container h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#titulo{
+    text-align: center;
+    font-weight: 900;
+    margin: 20px 0 50px 0;
+    position: relative;
+}
+.adicionar-tarefa{
+    padding-bottom: 15px;
+    margin: 10px 0;
+}
+
+.adicionar-tarefa input{
+    padding: 8px 4px;
+}
+
+.adicionar-tarefa button{
+    padding: 8px 10px;
+    cursor: pointer ;
+
+}
+
+.pesquisar-filtrar{
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.pesquisar{
+    width: 50%;
+
+}
+
+.pesquisar input{
+    padding: 8px 4px;
+}
+
+.pesquisar button{
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.filtrar{
+    width: 30%;
+}
+
+.filtrar select{
+    padding: 6px 4px;
+}
+
+.tarefas{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.tarefa p{
+    color: var(--corClara);
+    width: 70%;
+}
+
+.tarefa i{
+    border: 2px solid transparent;
+    color: var(--corClara);
+    padding: 6px 7px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.tarefa i:hover{
+    background-color: var(--corEscura);
+    color: var(--corClara);
+}
+
+.tarefa{
+    display: flex;
+    padding: 15px 10px;
+    margin: 10px 0;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid var(--corClara);
+}
+
+/* Done */
+.done{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.093), #a0d9f58d);
+}
+
+.done p,
+.done i{
+    color: var(--corClara);
+}
+
+.done i{
+    border: 2px solid transparent;
+}
+
+.done i:hover{
+    background-color: var(--corClara);
+    color: var(--corEscura);
+}
+
+.done p{
+    text-decoration: line-through;
+}
+
+/* Hide */
+
+.hide{
+    display: none;
+}
+
+/* Editar Tarefa */
+
+.edicao-tarefa{
+    background-color: transparent;
+    border: 2px solid black;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    padding: 0 30px;
+    border-radius: 5px;
+    width: 35%;
+}
+
+#titulo-edicao{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: 900;
+    color: white;
+}
+
+#titulo-edicao span{
+    font-weight: 600;
+    background-color: var(--corEscura);
+    color: var(--corClara);
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.novo-nome{
+    padding: 20px 0;
+    margin-left: 3px;
+}
+
+.novo-nome input{
+    padding: 6px 4px;
+}
+
+.novo-nome p{
+    color: var(--corClara);
+}
+
+
+.edicao-tarefa button{
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: var(--corEscura);
+    color: var(--corClara);
+}
+
+.edicao-tarefa i{
+    color: var(--corClara);
+}
+
+.botoes-editar{
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.botoes-editar button{
+    width: 100%;
+    padding: 13px;
+    font-weight: 900;
+    font-size: 14px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.botoes-editar button:hover{
+    opacity: 0.8;
+}

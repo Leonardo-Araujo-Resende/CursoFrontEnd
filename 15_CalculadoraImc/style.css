@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+:root{
+    --cor1: #081c4c;
+    --cor2: #1d4056;
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    background: linear-gradient(45deg, var(--cor1), var(--cor2));
+}
+
+.hide{
+    display: none;
+}
+
+.container{
+
+    width: 450px;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.737);
+    border-radius: 5px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    text-align: center;
+    color: var(--cor1);
+    margin-bottom: 40px;
+    position: relative;
+    padding: 5px;
+    font-size: 30   px;
+}
+
+.titulo::after{
+    position: absolute;
+    content: "";
+    background-color: var(--cor2);
+    width: 100px;
+    height: 5px;
+    bottom: 0;
+    left: 13px;
+}
+
+.input label{
+    font-size: 15px;
+    color: var(--cor2);
+    margin-bottom: 1px;
+    font-weight: 600;   
+}
+
+.input input{
+    border: none;   
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+
+.input input::placeholder{
+    color: rgba(255, 255, 255, 0.606);
+}
+
+.input input:focus{
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.buttons button{
+    flex: 1;
+    padding: 15px 10px;
+    background-color: #112937;
+    color: white;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#limpar{
+    background-color: #561d1d;
+}
+
+button:hover{
+    opacity: 1;
+
+}
+
+/* Estatisticas */
+
+.resultado{
+    text-align: center;
+}
+
+.titulo-resultado{
+    margin-bottom: 15px;
+}
+
+.situacao span{
+    color: rgb(146, 146, 26);
+
+}
+
+.situacao{
+    border-bottom: 1px solid var(--cor2);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.classificacao-titulo{
+    color: black;
+    margin: 30px 0px;
+    font-size: 23px;
+
+}
+
+.estatisticas{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.estatisticas p{
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(144, 143, 143);
+
+}
+
+
+.estatisticas div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 11px;
+
+}
+
+.titulo-estatisticas{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.voltar{
+    padding: 14px 0;
+    width: 100%;
+    background-color: var(--cor2);
+    color: white;
+    margin-top: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    border: none;
+}
+
+.voltar:hover{
+    opacity: 1;
+}
+
+#input-altura, #input-peso{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor2);
+    padding: 5px 20px;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+#input-altura p, #input-peso p{
+    font-weight: bold;
+}
+
+.input input::-webkit-outer-spin-button, .input input::-webkit-inner-spin-button{
+    appearance: none;
+}
