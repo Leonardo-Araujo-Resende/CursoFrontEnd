@@ -127,33 +127,37 @@ inputTarefa.addEventListener("keyup", (e)=>{
 var tituloTarefa;
 document.addEventListener("click", (e) =>{
 
-    //Finalizar
+    //Finalizar/Desfinalizar
     if(e.target.classList.contains("fa-check")){
         e.target.closest("div").classList.toggle("done");
 
         const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []; //Pega array de tarefas ou vazio
 
         tarefas.forEach(tarefa => {
-            if(tarefa.nome === e.target.closest("div").querySelector("p").textContent) tarefa.done = true;
-            console.log("a");
+            if(tarefa.nome === e.target.closest("div").querySelector("p").textContent){
+                if(tarefa.done === true)tarefa.done = false;
+                else if(tarefa.done === false)tarefa.done = true;
+            }
         })
 
         localStorage.setItem("tarefas", JSON.stringify(tarefas)); //Sobscreve com nova tarefa
     }
-    //Desfinalizar  
+    //Excluir
+
     if(e.target.classList.contains("fa-delete-left")){
+        let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []; //Pega array de tarefas ou vazio
 
-        if(e.target.closest("div").classList.contains("tarefa")){
-            e.target.closest("div").remove();
+        let nomeTarefa;
 
-            const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []; //Pega array de tarefas ou vazio
-
-            tarefas.forEach(tarefa => {
-                if(tarefa.nome === e.target.closest("div").querySelector("p").textContent) tarefa.done = false;
-            })
-
-            localStorage.setItem("tarefas", JSON.stringify(tarefas)); //Sobscreve com nova tarefa
-        }
+        tarefas.forEach(tarefa => {
+            if(tarefa.nome === e.target.closest("div").querySelector("p").textContent){
+                nomeTarefa = tarefa.nome;
+            }
+        })
+        tarefas = tarefas.filter(tarefa => tarefa.nome !== nomeTarefa);
+        e.target.closest("div").remove();
+        localStorage.setItem("tarefas", JSON.stringify(tarefas)); //Sobscreve com nova tarefa
+        
     }
 
     if(e.target.classList.contains("fa-pencil")){
